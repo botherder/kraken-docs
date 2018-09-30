@@ -4,10 +4,11 @@
 
 Kraken is a simple cross-platform Yara scanner that can be built for Windows, Mac, FreeBSD and Linux. It is primarily intended for incident response, research and ad-hoc detections \(_not_ for endpoint protection\). Following are the core features:
 
-* Scan running executables and memory of running processes with provided Yara rules \(leveraging [go-yara](https://github.com/hillu/go-yara)\).
-* Scan executables installed for autorun \(leveraging [go-autoruns](https://github.com/botherder/go-autoruns)\).
-* Report any detection to a remote server provided with a Django-based web interface.
-* Run continuously and periodically check for new autoruns and scan any newly-executed processes. Kraken will store events in a local SQLite3 database and will keep copies of autorun and detected executables.
+- Scan running executables and memory of running processes with provided Yara rules (leveraging [go-yara](https://github.com/hillu/go-yara)).
+- Scan executables installed for autorun (leveraging [go-autoruns](https://github.com/botherder/go-autoruns)).
+- Scan the filesystem with the provided Yara rules.
+- Report any detection to a remote server provided with a Django-based web interface.
+- Run continuously and periodically check for new autoruns and scan any newly-executed processes. Kraken will store events in a local SQLite3 database and will keep copies of autorun and detected executables.
 
 Some features are still under work or almost completed:
 
