@@ -2,7 +2,7 @@
 
 Cross-compiling Windows binaries from a Linux development machine is a slightly more complicated process. Firstly you will need to install MingW and some other dependencies:
 
-    $ sudo apt install gcc mingw-w64 automate libtool make
+    $ sudo apt install gcc mingw-w64 automake libtool make
 
 Next you will need to download Yara sources. Use the latest available version, which at the time of this writing is 3.8.1:
 
