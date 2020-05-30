@@ -4,9 +4,9 @@ Cross-compiling Windows binaries from a Linux development machine is a slightly 
 
     $ sudo apt install gcc mingw-w64 automake libtool make
 
-Next you will need to download Yara sources. Use the latest available version, which at the time of this writing is 3.8.1:
+Next you will need to download Yara sources. Use the latest available version, which at the time of this writing is 4.0.1:
 
-    $ wget https://github.com/VirusTotal/yara/archive/v3.8.1.tar.gz
+    $ wget https://github.com/VirusTotal/yara/archive/v4.0.1.tar.gz
 
 Unpack the archive and export `YARA_SRC` to the newly-created folder:
 
