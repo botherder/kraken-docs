@@ -16,7 +16,7 @@ Next you need to bootstrap Yara sources and compile them with MingW. These are t
 
     $ cd ${YARA_SRC}
     $ ./bootstrap.sh
-    $ ./configure --host=i686-w64-mingw32 --without-crypto --prefix=${YARA_SRC}/i686-w64-mingw32
+    $ ./configure --host=i686-w64-mingw32 --disable-magic --disable-cuckoo --without-crypto --prefix=${YARA_SRC}/i686-w64-mingw32
     $ make -C ${YARA_SRC}
     $ make -C ${YARA_SRC} install
 
