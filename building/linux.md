@@ -1,10 +1,14 @@
 # Building on Linux
 
+First, install some required dependencies before continuing:
+
+    $ sudo apt install gcc automake libtool make go-bindata
+
 You need to install Yara development libraries and headers. You should download and compile Yara from the [official sources](https://github.com/VirusTotal/yara). It will require `dh-autoreconf` to be installed and you will need to configure some compilation flags. This is most likely the procedure you will need to follow:
 
     $ sudo apt install dh-autoreconf
-    $ wget https://github.com/VirusTotal/yara/archive/v3.8.1.tar.gz
-    $ tar -zxvf yara-v3.8.1.tar.gz
+    $ wget https://github.com/VirusTotal/yara/archive/v4.0.1.tar.gz
+    $ tar -zxvf yara-v4.0.1.tar.gz
     $ cd yara-3.8.1
     $ ./bootstrap.sh
     $ ./configure --without-crypto
