@@ -9,7 +9,7 @@ You need to install Yara development libraries and headers. You should download 
     $ sudo apt install dh-autoreconf
     $ wget https://github.com/VirusTotal/yara/archive/v4.0.1.tar.gz
     $ tar -zxvf yara-v4.0.1.tar.gz
-    $ cd yara-3.8.1
+    $ cd yara-4.0.1
     $ ./bootstrap.sh
     $ ./configure --without-crypto
     $ make && sudo make install
