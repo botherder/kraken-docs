@@ -2,7 +2,7 @@
 
 First, install some required dependencies before continuing:
 
-    $ sudo apt install gcc automake libtool make go-bindata
+    $ sudo apt install gcc automake libtool make go-bindata pkg-config
 
 You need to install Yara development libraries and headers. You should download and compile Yara from the [official sources](https://github.com/VirusTotal/yara). It will require `dh-autoreconf` to be installed and you will need to configure some compilation flags. This is most likely the procedure you will need to follow:
 
